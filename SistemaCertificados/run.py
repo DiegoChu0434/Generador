@@ -24,10 +24,109 @@ PLANTILLAS_DIR = ARCHIVOS_DIR / "plantillas"
 PLANT_CERT_DIR = PLANTILLAS_DIR / "certificados"
 PLANT_CONST_DIR = PLANTILLAS_DIR / "constancias"
 
+ACTIVIDADES_POR_CARRERA = {
+
+    "INGENIERÍA CIVIL": (
+        "● Elaboración de expedientes individuales con fines de tasación y diagnósticos técnicos legales.\n"
+        "● Elaboración de memorias descriptivas, tasaciones.\n"
+        "● Desarrollo de plano de viviendas, distribución, afectación, ubicación, perimétricos, entre otros.\n"
+        "● Elaboración de certificados de búsqueda catastral, análisis técnico legal de predios afectados.\n"
+        "● Elaboración de valorizaciones, estudios de mercado para viviendas, obras complementarias, cultivos, terrenos, entre otros.\n"
+        "● Elaboración de mapas temáticos, conversión de archivos en formatos DWG, KMZ a SHP.\n"
+        "● Recopilación y análisis de datos espaciales, imágenes raster, superposición de shapefiles, elaboración de planos clave, entre otros."
+    ),
+    "ARQUITECTURA": (
+        "● Elaboración de expedientes individuales con fines de tasación y diagnósticos técnicos legales.\n"
+        "● Elaboración de memorias descriptivas, tasaciones.\n"
+        "● Desarrollo de plano de viviendas, distribución, afectación, ubicación, perimétricos, entre otros.\n"
+        "● Elaboración de certificados de búsqueda catastral, análisis técnico legal de predios afectados.\n"
+        "● Elaboración de valorizaciones, estudios de mercado para viviendas, obras complementarias, cultivos, terrenos, entre otros.\n"
+        "● Elaboración de mapas temáticos, conversión de archivos en formatos DWG, KMZ a SHP.\n"
+        "● Recopilación y análisis de datos espaciales, imágenes raster, superposición de shapefiles, elaboración de planos clave, entre otros."
+    ),
+    "INGENIERÍA GEOGRÁFICA": (
+        "● Desarrollo de líneas base físicas, ambientales y biológicas\n"
+        "● Análisis de base de datos alfanuméricos\n"
+        "● Elaboración de mapas temáticos, conversión de archivos en formatos DWG, KMZ a SHP.\n"
+        "● Recopilación y análisis de datos espaciales, imágenes raster, superposición de shapefiles, elaboración de planos clave, entre otros."
+    ),
+    "DISEÑO DE INTERIORES": (
+        "● Elaboración de expedientes individuales con fines de tasación y diagnósticos técnicos legales.\n"
+        "● Elaboración de memorias descriptivas, tasaciones.\n"
+        "● Desarrollo de plano de viviendas, distribución, afectación, ubicación, perimétricos, entre otros.\n"
+        "● Elaboración de certificados de búsqueda catastral, análisis técnico legal de predios afectados.\n"
+        "● Elaboración de valorizaciones, estudios de mercado para viviendas, obras complementarias, cultivos, terrenos, entre otros.\n"
+        "● Elaboración de mapas temáticos, conversión de archivos en formatos DWG, KMZ a SHP.\n"
+        "● Recopilación y análisis de datos espaciales, imágenes raster, superposición de shapefiles, elaboración de planos clave, entre otros."
+    ),
+    "INGENIERÍA AMBIENTAL": (
+        "● Elaboración de instrumentos de gestión ambiental.\n"
+        "● Descripción de línea base física, biológica.\n"
+        "● Levantamiento de observaciones y coordinaciones con la entidad.\n"
+        "● Elaboración de matrices de impactos y planes de manejo ambiental.\n"
+        "● Estudios de monitoreo ambiental (aire, agua, ruido, suelo) así como de monitoreos ocupacionales."
+    ),
+    "BIÓLOGO": (
+        "● Elaboración de líneas base biológica\n"
+        "● Descripción de flora y fauna presente en áreas de influencia para estudios ambientales\n"
+        "● Participación en elaboración de instrumentos de gestión ambiental, referente al componente biológico\n"
+        "● Desarrollo de monitoreos biológicos\n"
+        "● Elaboración planes de muestreo biológicos"
+    ),
+    "SOCIÓLOGOANTROPÓLOGO": (
+        "● Elaboración de líneas base social\n"
+        "● Desarrollo de talleres y reuniones informativas generales\n"
+        "● Elaboración de encuestas, toma de datos socioeconómicos entre otros\n"
+        "● Análisis y elaboración de cuadros y gráficos estadísitcos e interpretación de los mismos\n"
+        "● Elaboración de programas de ayuda social a poblaciones vulnerables"
+    ),
+    "INGENIERÍA AGRONOMÍAFORESTAL": (
+        "● Elaboración de expedientes individuales con fines de tasación y diagnósticos técnicos legales.\n"
+        "● Elaboración de memorias descriptivas, tasaciones.\n"
+        "● Desarrollo de plano de viviendas, distribución, afectación, ubicación, perimétricos, entre otros.\n"
+        "● Tasaciones de cultivos, árboles, obras complementarias y viviendas\n"
+        "● Elaboración de memorias descriptivas y planos para expedientes individuales"
+    ),
+    "ADMINISTRACIÓN": (
+        "● Elaboración y seguimientos de control del personal\n"
+        "● Cálculo de pagos y liquidaciones a trabajadores\n"
+        "● Evaluación de personal, entrevistas de trabajo, selección del personal\n"
+        "● Envío de cartas y cotizaciones a clientes\n"
+        "● Seguimiento de propuestas económicas, facturas en trámite\n"
+        "● Apoyo en búsqueda de nuevos proyectos en la OSCE, armado de licitaciones y propuestas\n"
+        "● Organización de archivos de trabajo, manuales operativos, documentación\n"
+        "● Apoyo en el área técnicas para revisión de expedientes, fichas socioeconómicas, fichas técnicas de campo, revisión de documentos e informes entre otros.\n"
+        "● Apoyo en la cotización de logística de campo, cronogramas, seguimiento de fechas de entregables, entre otros.\n"
+        "● Asistencia en la gerencias"
+    ),
+    "DERECHO": (
+        "● Análisis de partidas registrales, títulos archivados.\n"
+        "● Revisión de expedientes técnicos legales, condición jurídica de afectados.\n"
+        "● Elaboración de diagnósticos técnicos legales.\n"
+        "● Análisis de predios en base al Decreto Legislativos N° 1192 y sus modificatorias.\n"
+        "● Recopilación de documentación legal, constancias de posesión, partidas registrales, declaraciones juradas de colindantes.\n"
+        "● Cuadro resumen de afectados, condición jurídica, entre otros.\n"
+        "● Envío de cartas de solicitud de información registral y bases gráficas a entidades públicas y privadas."
+    ),
+    "MARKETING Y PUBLICIDAD": (
+        "● Elaboración de banners, afiches\n"
+        "● Manejo de redes sociales de la empresa (Facebook, Instagram, entre otros)\n"
+        "● Ideas y propuestas de negocios para captar clientes en sector industria, transporte, minería e hidrocarburos, entre otros.\n"
+        "● Obtención de base de datos de empresas a fin de contactarlos y captar potenciales clientes\n"
+        "● Elaboración de brochure actualizado de la empresa, experiencia de la empresa, otros.\n"
+        "● Asistencia en la gerencia\n"
+        "● Seguimiento a clientes, inscripción y registro a entidades para elaboración de estudios ambientales\n"
+        "● Posicionamiento de la marca a otros rubros\n"
+        "● Comunity manager para redes sociales\n"
+        "● Armado y elaboración de expedientes de licitación"
+    )
+}
+
+
 ALLOWED_TEMPLATE_EXT = {".docx"}
 
 # URL CSV publicada
-SHEETS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQG-icmEF9C0D4GOAig3dBVXCl0fN0qXS-6-o1yVM8KY-6MkpbHDF22CizH7elirxudmA5Anh-wSM0C/pub?output=csv"
+SHEETS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQokVbi9wgytaQpPMGKLCmE4zTIZFootlbwKw0Gz4Dh4lXTpQLz9a-GZZo85IApcvPhcX9SKK3B_ock/pub?output=csv"
 
 
 def db():
@@ -372,14 +471,15 @@ def dashboard():
     kpi_anulado   = count_estado("ANULADO")
 
     # últimas 10 operaciones desde el historial
+   # Cambia s.estado por h.accion (o el detalle del historial)
     ultimas10 = conn.execute("""
-        SELECT
-            h.id AS id,
-            s.tipo_documento AS tipo_documento,
-            s.documento AS documento,
+        SELECT 
+            h.id AS id, 
+            s.tipo_documento, 
+            s.documento, 
             (s.nombres || ' ' || s.apellidos) AS nombre_completo,
-            s.estado AS estado,
-            h.usuario AS usuario,
+            h.accion AS estado,  
+            h.usuario, 
             h.creado_en AS fecha
         FROM historial_solicitud h
         JOIN solicitudes s ON s.id = h.solicitud_id
@@ -571,7 +671,7 @@ def solicitudes_marcar_observado(sid):
         WHERE id = ?
     """, (ahora(), sid))
 
-    add_historial(conn, sid, s["marca_temporal"] or "", session.get("nombre","USUARIO"), "ESTADO", "Marcado como OBSERVADO")
+    add_historial(conn, sid, s["marca_temporal"] or "", session.get("nombre","USUARIO"), "OBSERVADO", "Marcado como OBSERVADO")
     conn.commit()
     conn.close()
 
@@ -600,7 +700,7 @@ def solicitudes_marcar_revisado(sid):
         WHERE id = ?
     """, (session.get("nombre","USUARIO"), ahora(), ahora(), sid))
 
-    add_historial(conn, sid, s["marca_temporal"] or "", session.get("nombre","USUARIO"), "ESTADO", "Marcado como REVISADO")
+    add_historial(conn, sid, s["marca_temporal"] or "", session.get("nombre","USUARIO"), "REVISADO", "Marcado como REVISADO")
     conn.commit()
     conn.close()
 
@@ -738,7 +838,7 @@ def solicitudes_anular(sid):
         WHERE id = ?
     """, (ahora(), sid))
 
-    add_historial(conn, sid, s["marca_temporal"] or "", session.get("nombre","USUARIO"), "ESTADO", "Solicitud ANULADA")
+    add_historial(conn, sid, s["marca_temporal"] or "", session.get("nombre","USUARIO"), "ANULADO", "Solicitud ANULADA")
     conn.commit()
     conn.close()
 
@@ -770,10 +870,7 @@ def solicitudes_sincronizar():
     try:
         url_con_cache_breaker = f"{SHEETS_CSV_URL}&cache_buster={int(time.time())}"
         df = pd.read_csv(url_con_cache_breaker)
-    
         df.columns = df.columns.str.strip()
-        
-        
     except Exception as e:
         flash(f"Error al conectar con Google Sheets: {e}", "error")
         return redirect(url_for("solicitudes"))
@@ -785,7 +882,6 @@ def solicitudes_sincronizar():
     nuevos = duplicados = errores = 0
 
     for _, row in df.iterrows():
-
         marca         = s(row.get("Marca temporal"))
         tipo_raw      = upper(row.get("Seleccione lo que desea solicitar"))
         nombres       = upper(row.get("NOMBRES"))
@@ -796,18 +892,33 @@ def solicitudes_sincronizar():
         uni           = upper(row.get("NOMBRE DE LA UNIVERSIDAD O INSTITUTO"))
         cod_alumno    = s(row.get("CODIGO DE ALUMNO"))
         facultad      = upper(row.get("FACULTAD"))
-        carrera       = upper(row.get("CARRERA"))
+        carrera_excel = upper(row.get("CARRERA")) 
         ciclo         = s(row.get("CICLO"))
         cargo         = upper(row.get("CARGO"))
-        actividades   = s(row.get("ACTIVIDADES"))
         
+       
+        actividades_final = "" 
+        
+        
+        encontrado = False
+        for carrera_mapeada, texto_actividades in ACTIVIDADES_POR_CARRERA.items():
+            if carrera_mapeada in carrera_excel or carrera_excel in carrera_mapeada:
+                actividades_final = texto_actividades
+                encontrado = True
+                break
+        
+   
+        if not encontrado:
+            actividades_final = s(row.get("ACTIVIDADES")) 
+       
+
         correo = s(row.get("CORREO ELECTRONICO") or row.get("CORREO ELECTRÓNICO") or row.get("Dirección de correo electrónico") or "")
 
         if not documento or not marca:
             continue
 
         tipo = "CONST" if "CONSTANCIA" in tipo_raw else "CERT"
-        sheet_uid = f"{marca}|{documento}|{tipo}"
+        sheet_uid = f"{marca}|{documento}|{tipo}|{int(time.time())}"
 
         try:
             cur.execute("""
@@ -815,7 +926,7 @@ def solicitudes_sincronizar():
                     sheet_uid, marca_temporal, correo, correo_solicitante, tipo_documento,
                     nombres, apellidos, documento,
                     fecha_inicio, fecha_fin,
-                    universidad, codigo_alumno, facultad, carrera, ciclo,cargo,
+                    universidad, codigo_alumno, facultad, carrera, ciclo, cargo,
                     actividades, estado, creado_en, actualizado_en
                 )
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'RECIBIDO', ?, ?)
@@ -823,8 +934,8 @@ def solicitudes_sincronizar():
                 sheet_uid, marca, correo, correo, tipo,
                 nombres, apellidos, documento,
                 f_inicio, f_fin,
-                uni, cod_alumno, facultad, carrera, ciclo,cargo,
-                actividades, ahora(), ahora()
+                uni, cod_alumno, facultad, carrera_excel, ciclo, cargo,
+                actividades_final, ahora(), ahora()
             ))
             nuevos += 1
         except sqlite3.IntegrityError:
