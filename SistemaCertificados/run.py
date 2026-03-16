@@ -8,9 +8,9 @@ import os
 from werkzeug.utils import secure_filename
 from flask import send_file, abort
 from docx import Document
-#import comtypes.client
+import comtypes.client
 import uuid
-#import pythoncom
+import pythoncom
 import time
 
 
