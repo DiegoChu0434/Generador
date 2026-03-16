@@ -1456,6 +1456,15 @@ def descargar_doc(doc_id):
     return send_file(ruta_abs, as_attachment=True, download_name=nombre_descarga)
 
 if __name__ == "__main__":
+    with app.app_context():
+        connection = db()
+        ensure_usuarios_schema(connection)
+        ensure_solicitudes_schema(connection)
+        ensure_config_schema(connection)
+        ensure_plantillas_schema(connection)
+        ensure_historial_schema(connection)
+        connection.close()
+    
     app.run(debug=True)
 
  
