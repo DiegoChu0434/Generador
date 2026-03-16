@@ -1,0 +1,5 @@
+openai
+pandas
+fpdf
+python-dotenv
+streamlit
